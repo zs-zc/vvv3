@@ -1,0 +1,19 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "name": "iphone11",
+            "price": "3000"
+        },
+        {
+            "id": 2,
+            "name": "iphone12",
+            "price": "800"
+        },
+        {
+            "id": 3,
+            "name": "iphone13",
+            "price": "13000"
+        }
+    ]
+}
