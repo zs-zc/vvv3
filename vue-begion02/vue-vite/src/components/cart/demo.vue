@@ -1,18 +1,26 @@
 <template>
   <div>
-    <h1>购物车列表</h1>
+    <h1>购物车</h1>
+    <hr />
     <ul>
-      <li v-for="item in productList">{{ item.name }}---{{ item.price }}</li>
+      <li v-for="item in cartList">
+        {{ item.name }}---{{ item.price }}--{{ item.quantity }} ={{
+          item.price * item.quantity
+        }}
+      </li>
     </ul>
+    <div>
+        总价：{{totalPrice}}
+    </div>
   </div>
 </template>
 
 <script setup>
 import { storeToRefs } from "pinia";
-import cartStore from "@/store/cart.js";
-
-const cart = cartStore();
-const { productList } = storeToRefs(cart);
+import { ref, onMounted } from "vue";
+import cart from "@/store/cart.js";
+const cartStore = cart();
+const { cartList,totalPrice } = storeToRefs(cartStore);
 </script>
 
 <style>

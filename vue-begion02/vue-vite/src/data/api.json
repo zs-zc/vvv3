@@ -3,17 +3,20 @@
         {
             "id": 1,
             "name": "iphone11",
-            "price": "3000"
+            "price": "3000",
+            "inventory": 3
         },
         {
             "id": 2,
             "name": "iphone12",
-            "price": "800"
+            "price": "800",
+            "inventory": 4
         },
         {
             "id": 3,
             "name": "iphone13",
-            "price": "13000"
+            "price": "13000",
+            "inventory": 2
         }
     ]
 }
